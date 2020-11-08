@@ -1,0 +1,6 @@
+React
+-Potential use cases for React
+-What sets React apart
+-Key projects to consider
+-Approaches to mitigating downsides
+-Five key decisions you need to make

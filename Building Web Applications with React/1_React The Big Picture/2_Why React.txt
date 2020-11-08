@@ -1,0 +1,31 @@
+1.Flexibility
+-React is a library, it is not a framework
+-Angular and Ember are frameworks
+*We can use React for web apps, static sites, mobile, desktop, server-rendered apps, virtual reality
+
+There are several React renderers react dom, react-native, react-vr
+Server side rendering Next, Gatsby, Phenomic
+
+We can migrate our legacy web app with React component by component
+It provides a low risk migration path
+
+2.Developer Experience
+-It is easy to learn
+-JSX compiles to JS
+-There is a main idea difference between React and other frameworks
+    *Angular, Vue, Ember embraces "JS" in HTML
+    *React embraces "HTML" in JS, puts fake HTML in JS
+
+3.Corporate Investment
+-react-codemod automatically update breaking old code
+
+4.Community
+Google's open source component library
+Ecosystem provides libraries for specific needs
+
+5.Performance
+-Updates dom with efficiency
+-React 35K, Inferno 9K, Praect 3K
+
+6.Testability
+

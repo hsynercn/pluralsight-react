@@ -1,0 +1,48 @@
+1.Framework vs Library
+Frameworks:Angular, Ember
+    -Clear options
+    -Less decision fatigue
+    -Less setup overhead
+    -More cross-team consistency
+
+Library
+    -Light-weight
+    -Sprinkle on existing apps, Facebook replaces their PHP app
+    -Pick what you need
+    -Chose best tech
+    -Popular boilerplates exists
+
+2.Concise vs Explicit
+
+Two-way binding     One way binding<-React
+-less coding        -more control
+-automatic          -more explicit
+                    -easy to debug
+
+3.Template-centric vs JavaScript-centric
+
+-"JS" in HTML, learn their unique syntax
+-"HTML" in JS, learn JS
+
+Template-centric                    JavaScript-centric
+-Little JS knowledge required       -Little framework-specific syntax
+-Avoid confusion with JS binding    -Fewer concepts to learn. It is JS
+-Rule of least power                -Less code
+                                    -Easy to read
+                                    -Encourages improving JS skills
+                                    -Skill transfer
+
+4.Separate vs Single File
+
+MVC: Model   View    Controller
+     JS      HTML    JS
+React:   Component
+         JS & JSX
+
+HTML, CSS, JS:Separate technologies, but intertwined concerns
+
+Handling intertwined concerns in separate files can actually hinder debugging
+and slows feedback
+Each component is a separate concern
+Button, Datepicker, Accordion, TextInput
+

@@ -45,4 +45,16 @@ Handling intertwined concerns in separate files can actually hinder debugging
 and slows feedback
 Each component is a separate concern
 Button, Datepicker, Accordion, TextInput
+React: Nested components
+
+5.Standard vs Non-standard
+We use non-standard technologies because browser compatibility is a problem
+Today, majority use Angular, React, Ember, Vue because:
+1.Faster innovation
+2.Strong user and developer experience
+3.Broad browser support
+
+6.Community vs Corporate
+-Driven by FB's needs
+-Full-time development staff
 

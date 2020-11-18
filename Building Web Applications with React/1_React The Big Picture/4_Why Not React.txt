@@ -1,0 +1,35 @@
+Why not React?
+-JSX differs from HTML
+-Build step
+-Potential version conflicts
+-Old features in searches
+-Decision fatigue
+
+Concern 1:HTML and JSX Differ
+-JSX compiles to JS
+-We need to convert HTML to JSX
+
+Concern 2:Build Step Required
+-We need to build code
+>Minify>Transpile>Test and lint
+-Popular transpilers compile JSX: Babel, TypeScript
+
+Concern 3:Version Conflicts
+-Runtime:Potential version conflicts
+
+Concern 4:Outdated Resources Online
+-Old stuff shows up on web
+-Some content is outdated
+
+Concern 5:Decision Fatigue
+-There are options
+Key decision points:
+-Dev environment>commonly create-react-app
+-Classes or functions>Most people prefer functions
+-Types> PropTypes, TypeScript, or Flow>TypeScript is quite popular
+-State
+    Plain React, (Flux, Redux, MobX <- Optional)
+    Redux is the most popular one
+-Styling> Most popular one CSS-in-JS
+
+

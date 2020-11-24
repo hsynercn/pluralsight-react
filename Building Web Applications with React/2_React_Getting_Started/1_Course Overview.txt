@@ -1,0 +1,6 @@
+React
+-React's design concepts
+-JSX and events handlers, data, and APIs
+-React hooks
+-Communicating between components
+-Creating a local development environment

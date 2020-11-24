@@ -1,0 +1,34 @@
+-React is a library
+
+Why React
+-A JavaScript library for building user interfaces
+-We describe user interface with react
+-React is declarative
+-But isn't the HTML already declarative
+    *HTML:Declarative for static content
+    *React:Declarative for dynamic data
+-How exactly is NOT being a framework a good thing?
+    *Good for small teams and startups, some design decisions are already made
+    *Limited Flexibility
+        -Do things a certain way
+        -Hard to deviate
+    *Large and full of features
+        -Hard to customize
+        -Use the whole thing
+
+Pure Unix philosophy:
+
+Write programs that do one thing and do it well.
+Write programs to work together.
+Write programs to handle text steams,
+because that is a universal interface.
+
+React:A "language" to model the state of UIs, not the
+transaction of them.
+
+Benefits of React:
+-The "virtual" browser (vs. DOM API)
+-"Just JavaScript"
+-React Native (for the win)
+-Battle-tested
+-Declarative language (model UI and state)

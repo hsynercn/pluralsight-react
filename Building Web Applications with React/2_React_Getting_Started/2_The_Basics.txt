@@ -71,3 +71,13 @@ class MuComponent extends React.Component {
 -JSX IS NOT HTML
 
 *Install browser debug plugin for React
+*Using JSX is better for maintaining the code
+*A component name has to start with uppercase
+
+React Hook
+-useState() results:
+a) state object (getter)
+b) updater function (setter)
+
+const [currentStateValue, functionToSetNewStateValue] = useState(initialStateValue)
+

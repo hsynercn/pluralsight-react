@@ -32,3 +32,42 @@ Benefits of React:
 -React Native (for the win)
 -Battle-tested
 -Declarative language (model UI and state)
+
+React's Basic Concepts
+1)Components
+-Like functions
+-Input: props, state Output:UI
+-Reusable and composable
+-<Component/>
+-Can manage a private state
+2)Reactive updates
+-React will react
+-Take updates to the browser
+3)Virtual views in memory
+-Generate HTML using JS
+-No HTML template language
+-Tree reconciliation
+
+React Components:
+->Function Component
+->Class Component
+
+Function sample:
+const MyComponent = (props) => {
+    return (
+        <domElementOrComponent .../>
+    );
+}
+
+Class sample:
+class MuComponent extends React.Component {
+    render () {
+        return (
+            <domElementOrComponent .../>
+        );
+    }
+}
+
+-JSX IS NOT HTML
+
+*Install browser debug plugin for React

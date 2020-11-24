@@ -9,6 +9,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>Hello React!</p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -20,6 +21,10 @@ function App() {
       </header>
     </div>
   );
+}
+
+function Hello(){
+  return <div>Hello React!</div>
 }
 
 export default App;

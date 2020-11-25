@@ -83,3 +83,20 @@ const [currentStateValue, functionToSetNewStateValue] = useState(initialStateVal
 
 *Parent components can flow data and behaviour down to their children.
 
+*React updates the computed diff not the whole DOM
+For example with a refreshing period we can't type on a HTML element
+because every run resets the DOM, but we can type on a React element
+because Reacts reflects only the differences
+
+Summary
+-Components and reactive updates
+-Virtual DOM nodes and JSX
+-Props and State
+    -(props) => {}
+    -[val, setVal] = useState(initialVal)
+    -Immutable props. Mutable state
+-ReactDom.render
+    -<Component />
+    -DOM node
+-React events (onClick, onSubmit, ...)
+-Function and class components

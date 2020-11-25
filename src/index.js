@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Unified from "./MyFirstElement";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div><App /><Unified /></div>
   </React.StrictMode>,
   document.getElementById('root')
 );

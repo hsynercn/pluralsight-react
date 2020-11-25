@@ -81,3 +81,5 @@ b) updater function (setter)
 
 const [currentStateValue, functionToSetNewStateValue] = useState(initialStateValue)
 
+*Parent components can flow data and behaviour down to their children.
+

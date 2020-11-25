@@ -11,7 +11,7 @@ function App() {
                     Edit <code>src/App.js</code> and save to reload.
                 </p>
                 <Hello/>
-                <Button/>
+                <Unified/>
                 <p>Hello React!</p>
                 <a
                     className="App-link"
@@ -27,15 +27,25 @@ function App() {
 }
 
 function Hello() {
-    return <div>Hello React func!</div>
+    return <div>Hello func!</div>
 }
 
-function Button() {
-    //const [currentStateValue, functionToSetNewStateValue] = useState(initialStateValue)
-    const [counter, setCounter] = useState(5)
-    return <button onClick={() => {
-        setCounter(counter * 2)
-    }}>{counter}</button>;
+function Button(props) {
+    //const handleClick = () => setCounter(counter * 2);
+    return <button onClick={props.onClickFunction}>+1</button>;
+}
+
+function Display(props) {
+    return (<div>{props.message}</div>);
+}
+
+function Unified() {
+    const [counter, setCounter] = useState(55);
+    const incrementCounter = () => setCounter(counter * 2);
+    return (<div>
+        <Button onClickFunction={incrementCounter}/>
+        <Display message={counter}/>
+    </div>);
 }
 
 function increment() {

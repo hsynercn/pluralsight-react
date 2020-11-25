@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {useState} from "react";
+import React, {useState} from "react";
 
 function App() {
     return (
@@ -31,25 +31,32 @@ function Hello() {
 }
 
 function Button(props) {
-    //const handleClick = () => setCounter(counter * 2);
-    return <button onClick={props.onClickFunction}>+1</button>;
+    const handleClick = () => props.onClickFunction(props.increment);
+    return (
+        <button onClick={handleClick}>
+            +{props.increment}
+        </button>
+    );
 }
 
 function Display(props) {
-    return (<div>{props.message}</div>);
+    return (
+        <div>
+            {props.message}
+        </div>
+    );
 }
 
 function Unified() {
     const [counter, setCounter] = useState(55);
-    const incrementCounter = () => setCounter(counter * 2);
+    const incrementCounter = (incrementValue) => setCounter(counter + incrementValue);
     return (<div>
-        <Button onClickFunction={incrementCounter}/>
+        <Button onClickFunction={incrementCounter} increment={1}/>
+        <Button onClickFunction={incrementCounter} increment={5}/>
+        <Button onClickFunction={incrementCounter} increment={10}/>
+        <Button onClickFunction={incrementCounter} increment={100}/>
         <Display message={counter}/>
     </div>);
-}
-
-function increment() {
-    console.log("CLicked!");
 }
 
 export default App;

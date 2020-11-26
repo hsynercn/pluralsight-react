@@ -1,0 +1,4 @@
+ECMAScript
+-Ecma Script Technical Committee releases specifications every year
+-Modern browsers follow these features
+-First started with ES6, ECMAScript 2015 language specification

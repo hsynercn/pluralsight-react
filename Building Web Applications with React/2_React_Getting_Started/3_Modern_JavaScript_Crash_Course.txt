@@ -2,3 +2,59 @@ ECMAScript
 -Ecma Script Technical Committee releases specifications every year
 -Modern browsers follow these features
 -First started with ES6, ECMAScript 2015 language specification
+
+-Nested block scopes: {{{}}}
+
+-Constant variable: cosnt answer=42;
+
+const X = function() {
+  // "this" here is the caller of X
+};
+
+const Y = () => {
+  // "this" here is NOT the caller of Y
+  // It's the same "this" found in Y's scope
+};
+
+"This" keyword inside a regular function depends on HOW the function was CALLED
+"This" keyword inside an arrow function depends on where the function was defines
+
+-Literal initiation is very common is JS
+
+const mystery = 'answer';
+const InverseOfPI = 1 / Math.PI;
+
+const obj = {
+	p1: 10,
+  p2: 20,
+  f1() {},
+  f2: () => {},
+  [mystery]: 42,
+  InverseOfPI,
+};
+
+Console output of obj:
+    Object
+    InverseOfPI: 0.3183098861837907
+    answer: 42
+    f1: ƒ f1()
+    f2: () => { }
+    p1: 10
+    p2: 20
+    __proto__: Object
+
+Destructuring:
+
+//const PI = Math.PI
+//const E = Math.E
+//const SQRT2 = Math.SQRT2
+
+const{PI, E, SQRT2} = Math;
+
+
+// const circleArea = ({radius}, {precision = 2} = {}) =>
+//   (PI * radius * radius).toFixed(precision);
+
+// console.log(
+//   circleArea(circle, { precision: 5 })
+// );

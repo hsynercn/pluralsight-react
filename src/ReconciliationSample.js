@@ -1,3 +1,4 @@
+import React from 'react';
 const render = () => {
     document.getElementById('mountNode').innerHTML = `
     <div>

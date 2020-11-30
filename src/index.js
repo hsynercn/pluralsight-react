@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Unified from "./MyFirstElement";
+import Container from "./GitHubCards";
 
 ReactDOM.render(
   <React.StrictMode>
-    <div><App /><Unified /></div>
+    <div><App /><Unified /><Container /></div>
   </React.StrictMode>,
   document.getElementById('root')
 );

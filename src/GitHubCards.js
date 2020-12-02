@@ -1,5 +1,6 @@
 import React from "react";
 import './GitHubCards.css';
+import axios from 'axios';
 
 
 const testData = [
@@ -15,15 +16,22 @@ const CardList = (props) => (
 );
 
 class Form extends React.Component {
-    userNameInput = React.createRef();
-    handleSubmit = (event) => {
+    state = {userName: ''};
+    handleSubmit = async (event) => {
         event.preventDefault();
-        console.log(this.userNameInput.current.value)
+        const resp = await axios.get(`https://api.github.com/users/${this.state.userName}`);
+        this.props.onSubmit(resp.data);
     };
     render() {
         return(
             <form onSubmit={this.handleSubmit}>
-                <input type="text" placeholder="GitHub username" ref={this.userNameInput} required/>
+                <input
+                    type="text"
+                    value={this.state.userName}
+                    onChange={event => this.setState({userName: event.target.value})}
+                    placeholder="GitHub username"
+                    required
+                />
                 <button>Add card</button>
             </form>
         );
@@ -46,20 +54,16 @@ class Card extends React.Component {
 }
 
 class Container extends React.Component {
-    /*constructor(props) {
-        super(props);
-        this.state = {
-            profiles: testData
-        };
-    }*/
-
     state = {
         profiles: testData
+    };
+    addNewProfile = (profileData) => {
+        this.setState(prevState => ({profiles: [...prevState.profiles,profileData]}));
     };
     render() {
         return (
             <div>
-                <Form/>
+                <Form onSubmit={this.addNewProfile}/>
                 <CardList profiles={this.state.profiles}/>
             </div>
         );

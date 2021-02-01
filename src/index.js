@@ -5,10 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Unified from "./MyFirstElement";
 import Container from "./GitHubCards";
+import CounterApp from "./ButtonElement";
 
 ReactDOM.render(
   <React.StrictMode>
-    <div><App /><Unified /><Container /></div>
+    <div>
+        <CounterApp/>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

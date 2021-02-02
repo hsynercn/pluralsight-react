@@ -1,16 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Unified from "./MyFirstElement";
-import Container from "./GitHubCards";
-import CounterApp from "./ButtonElement";
+import StarMatch from "./StarGame";
+import './StarGame.css'
 
 ReactDOM.render(
   <React.StrictMode>
     <div>
-        <CounterApp/>
+        <StarMatch/>
     </div>
   </React.StrictMode>,
   document.getElementById('root')

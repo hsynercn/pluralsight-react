@@ -8,6 +8,13 @@ const PlayNumber = props => (
     </button>
 );
 
+const StarDisplay = props => (
+  <>
+      {utils.range(1, props.count).map(starId =>
+          <div key={starId} className="star"/>)}
+  </>
+);
+
 const StarMatch = () => {
     const [stars, setStars] = useState(utils.random(1, 9));
     return (
@@ -17,13 +24,11 @@ const StarMatch = () => {
             </div>
             <div className="body">
                 <div className="left">
-                    {utils.range(1, stars).map(starId =>
-                        <div key={starId} className="star"/>)}
-
+                    <StarDisplay count={stars}/>
                 </div>
                 <div className="right">
                     {utils.range(1, 9).map(number =>
-                        <PlayNumber key={number} nunber={number}/>)}
+                        <PlayNumber key={number} number={number}/>)}
                 </div>
             </div>
             <div className="timer">Time Remaining: 10</div>
